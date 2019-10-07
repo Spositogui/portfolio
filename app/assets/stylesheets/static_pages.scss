@@ -1,0 +1,18 @@
+// Place all the styles related to the Static_Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+//#0D0D0D - #404040 - #595959 - #8C8C8C - #A6986D
+@import "bootstrap";
+
+* {
+    padding: 0;
+    margin: 0;
+    color: #f0f0f0;
+    box-sizing: border-box;
+}
+
+.nav {
+    float: left;
+    background-color: #404040;
+}
+
