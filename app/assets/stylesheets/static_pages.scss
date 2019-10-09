@@ -2,17 +2,68 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 //#0D0D0D - #404040 - #595959 - #8C8C8C - #A6986D
-@import "bootstrap";
 
-* {
+
+@import "bulma";
+
+html,
+body {
+    height: 100%;
+}
+#nav {
+    width: 120px;
+    background-color: #8C8C8C;
     padding: 0;
     margin: 0;
-    color: #f0f0f0;
-    box-sizing: border-box;
+}
+.navbar {
+    width: 100%;
+    background-color: #8C8C8C;
+}
+.navbar-burger{
+    display: none;
+}
+.menu-list {
+    margin-top: 12px;
+}
+.menu-list li a{
+    padding-left: 38px;
+}
+.main {
+    height: 100vh;
+    background-color: #0d0d0d;
+}
+.image {
+    padding-left: 10px;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+.image img {
+    width: 70px;
+    height: 70px;
 }
 
-.nav {
-    float: left;
-    background-color: #404040;
+@media (max-width: 762px) {
+    #nav {
+        width: auto;
+    }
+    .image {
+        padding-top: 15px;
+        padding-bottom: 3px;
+        margin-left: 10px;
+    }
+    .image img {
+        width: 50px;
+        height: 50px;
+    }
+    .navbar-burger{
+        display: block;
+    }
+    .navbar-burger span {
+        width: 22px;
+        left: calc(50% - 22px);
+        margin-top: 11px;
+        height: 2px;
+    }
 }
 

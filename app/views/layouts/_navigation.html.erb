@@ -1,28 +1,22 @@
-<nav class="navbar navbar-expand-md navbar-light bg-dark fixed-top">
- 
-    <a class="navbar-brand circle"><img src="../../assets/images/perfil.jpeg"></a>
-        
-    <button type="button" class="navbar-toggler bg-light" data-toggle="collapse" data-target="#nav">
-        <span class="navbar-toggler-icon"></span>    
-    </button>
-        
-    <div class="collapse navbar-collapse justify-content-between" id="nav">
-        
-        <ul class="navbar-nav"> 
-            <li class="nav-item" >
-                <a class="nav-link text-light font-weight-bold px-3" href="#">HOME</a>
-            </li>
-                
-            <li class="nav-item dropdown" data-toggle="dropdown">
-                <a class="nav-link text-light font-weight-bold px-3" href="#">ABOUT</a>
-            </li>
-                
-            <li class="nav-item">
-                <a class="nav-link text-light font-weight-bold px-3" href="#">PORTFÓLIO</a>
-            </li>
-                
-            <li class="nav-item">
-                <a class="nav-link text-light font-weight-bold px-3" href="#">CONTACT</a>
-            </li>
+<div id="nav" class="column is-2 is-one-fifth">
+    <div class="navbar-brand ">
+        <figure class="image">
+            <%= image_tag "perfil.jpeg", class: "is-rounded" %>
+        </figure>
+        <div role="button" class="navbar-burger" aria-label="menu" data-target="menu-list">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </div> 
+    </div>
+    <nav class="navbar is-sidebar-menu is-hidden-mobile">
+        <ul class="menu-list">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Portfólio</a></li>
+            <li><a>Contact</a></li>
         </ul>
-</nav> 
+    </nav>
+</div>
+   
+<!--<%= image_tag "perfil.jpeg", class: "is-rounded" %>-->

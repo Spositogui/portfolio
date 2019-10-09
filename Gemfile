@@ -21,8 +21,8 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
-#bootsrap
-gem 'bootstrap', '~> 4.3.1'
+#bulma
+gem "bulma-rails", "~> 0.7.5"
 gem 'jquery-rails'
 
 group :development, :test do

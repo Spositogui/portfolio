@@ -7,13 +7,14 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/9296c7e2d5.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
-    <%= render 'layouts/navigation' %>
-    <main class="container main">
+    <div class="columns">
+      <%= render 'layouts/navigation' %>
       <%= yield %>
-    </main>
+    </div>
   </body>
 </html>
