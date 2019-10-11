@@ -48,12 +48,12 @@ body {
     color: #E6F1F5;
     padding: 0.5em 1.9em;
 }
-.image {
+#nav .image {
     margin: 0 auto;
     padding-top: 20px;
     padding-left: 10px;
 }
-.image img {
+#nav .image img {
     width: 70px;
     height: 70px;
 }
@@ -64,9 +64,29 @@ body {
     margin-left: 19vh;
     background-color: #0d0d0d;
 }
-.portfolio img {
-    max-width: 150px;
-    max-height: 300px;
+#skills {
+    margin-top: 20px;
+    text-align: center;
+}
+.portfolio .columns {
+    margin-top: 2rem;
+    height: auto;
+}
+.portfolio .column {
+    max-width: 300px;
+    margin: 10px 10px
+}
+.card {
+    width: 100%;
+    height: min-content;
+    border: solid 1px #595959;
+    background-color: #0d0d0d;
+}
+.card img {
+    width: 90%;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: solid 1px #404040;
 }
 
 .container {
@@ -82,17 +102,18 @@ body {
         width: 105%;
         height: 4.25rem;
     }
-    .image {
+    #nav .image {
         padding-top: 15px;
-        margin-left: 10px;
+        margin-left: 15px;
         padding-bottom: 3px;
     }
-    .image img {
+    #nav .image img {
         width: 50px;
         height: 50px;
     }
     .navbar-burger{
         display: block;
+        margin-right: 10px;
     }
     .navbar-burger span {
         width: 22px;
@@ -110,7 +131,7 @@ body {
         margin: 0 auto;
     }
     main .header {
-        margin-top: 23vh;
+        margin-top: 18vh;
     }
 
 }
