@@ -1,29 +1,43 @@
-<!--
-<div class="row">
-	<h2>Guilherme P. Sposito</h2>
-	<p>Backend Developer.</p>
-</div>
-<div class="row">
-	<h2>About Me</h2>
-	<p>
-		Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-		Laboriosam vitae accusantium aliquid expedita dignissimos enim 
-		molestias eveniet quisquam. Ut ipsa doloribus voluptatibus officiis 
-		recusandae accusantium earum eos suscipit, esse dicta.Dignissimos illo 
-		eaque totam perferendis repudiandae odio asperiores, explicabo incidunt 
-		hic nobis saepe corrupti doloremque porro quisquam vero! Cum distinctio 
-		recusandae doloremque accusantium repudiandae corporis necessitatibus 
-		officiis ex, eaque voluptatem?
-	</p>
-</div>
-<div class="row">
-	<h2>Portfólio</h2>
-</div>
-<div class="row">
-	<h2>Contact</h2>
-</div>
-
--->
 <main class="main column is-main-content">
-	<h2>Welcome to home page!</h2>
+	<header class="container header">	
+		<h1 class="title has-text-white-bis roboto-font">Welcome, I'm Guilherme Sposito.</h1>
+		<h4 class="title is-4 has-text-grey-light">|Backend Programmer|</h4>
+		<%= image_tag "programming.jpeg" %>
+	</header>
+
+	<section class="container">
+		<h5 class="title is-5 has-text-grey-lighter roboto-font">About Me :)</h5>
+		<p class="has-text-grey-light">
+			<span class="has-text-white-ter">I'm Guilherme,</span>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+				Illum at molestias perspiciatis sunt ab beatae deleniti 
+				vero voluptatum exercitationem, asperiores animi distinctio eius nemo, dolores sed possimus, 
+				quia voluptas eaque.
+		</p>
+	</section>
+
+	<section class="container portfolio">
+		<h5 class="title is-5 has-text-grey-lighter roboto-font">Portfólio</h5>
+		<div class="portfolio-container">
+			<%= image_tag "site1.jpeg" %>
+			<h6 class="title is-6 has-text-white-ter">Task Manager</h6>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+				Ab at inventore aliquam veritatis laborum maxime velit?
+			</p>
+		</div>
+		
+		<div class="portfolio-container">
+			<%= image_tag "site2.jpeg" %>
+			<h6 class="title is-6 has-text-white-ter">Site 2</h6>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+				Ab at inventore aliquam veritatis laborum maxime velit?
+			</p>
+		</div>
+	</section>
+
+	<section class="container">
+		<h5 class="title is-5 has-text-grey-lighter roboto-font">Contact</h5>	
+	</section>
 </main>

@@ -9,16 +9,31 @@
 html,
 body {
     height: 100%;
+    font-family: 'Grenze', serif;
+}
+.columns {
+    height: 500vh;
+}
+.roboto-font {
+    font-family: 'Roboto Mono', monospace;
+}
+
+//navigation
+.header {
+    text-align: center;
 }
 #nav {
-    width: 120px;
-    background-color: #8C8C8C;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    z-index: 1;
+    width: 120px;
+    height: 150vh;
+    position: fixed;
+    background-color: #404040;
 }
 .navbar {
     width: 100%;
-    background-color: #8C8C8C;
+    background-color: #404040;
 }
 .navbar-burger{
     display: none;
@@ -26,31 +41,51 @@ body {
 .menu-list {
     margin-top: 12px;
 }
-.menu-list li a{
-    padding-left: 38px;
+.menu-list li {
+    margin-left: 9px;
 }
-.main {
-    height: 100vh;
-    background-color: #0d0d0d;
+.menu-list a{
+    color: #E6F1F5;
+    padding: 0.5em 1.9em;
 }
 .image {
-    padding-left: 10px;
-    padding-top: 20px;
     margin: 0 auto;
+    padding-top: 20px;
+    padding-left: 10px;
 }
 .image img {
     width: 70px;
     height: 70px;
 }
 
+//index
+.main {
+    height: 100%;
+    margin-left: 19vh;
+    background-color: #0d0d0d;
+}
+.portfolio img {
+    max-width: 150px;
+    max-height: 300px;
+}
+
+.container {
+    padding: 0 20px;
+    margin-top: 2em;
+    margin-bottom: 4em;
+    align-items: center;
+    align-content: center;
+}
+
 @media (max-width: 762px) {
     #nav {
-        width: auto;
+        width: 105%;
+        height: 4.25rem;
     }
     .image {
         padding-top: 15px;
-        padding-bottom: 3px;
         margin-left: 10px;
+        padding-bottom: 3px;
     }
     .image img {
         width: 50px;
@@ -61,15 +96,23 @@ body {
     }
     .navbar-burger span {
         width: 22px;
-        left: calc(50% - 22px);
-        margin-top: 11px;
         height: 2px;
+        margin-top: 11px;
+        left: calc(50% - 22px);
     }
     .menu-list {
-        margin-top: 8px;
+        margin-top: 0px;
     }
     .menu-list li a{
         padding-left: 24px;
     }
+    .main {
+        margin: 0 auto;
+    }
+    main .header {
+        margin-top: 23vh;
+    }
+
 }
+
 
