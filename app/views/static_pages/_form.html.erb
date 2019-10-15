@@ -1,0 +1,22 @@
+<%= form_for(@contact) do |f| %>
+    <div class="field">
+        <label class="label"><%= f.label :name %></label>
+        <div class="control">
+            <%= f.text_field :name, class: "input" %>
+        </div>
+    </div>
+
+    <div class="field">
+        <label class="label"><%= f.label :email %></label>
+        <div class="control">
+            <%= f.text_field :email, class: "input" %>
+        </div>
+    </div> 
+
+    <div class="field">
+        <label class="label"><%= f.label :message %></label>
+        <div class="control">
+            <%= f.text_area :message, class: "input" %>
+        </div>
+    </div>     
+<% end %>
